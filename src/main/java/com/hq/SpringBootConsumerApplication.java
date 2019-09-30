@@ -11,11 +11,11 @@ import org.springframework.web.client.RestClientException;
 import com.hq.controller.ConsumerControllerClient;
 
 @SpringBootApplication
-public class SpringBootHelloWorldApplication {
+public class SpringBootConsumerApplication {
 
 	public static void main(String[] args) throws RestClientException, IOException {
 		ApplicationContext ctx = SpringApplication.run(
-				SpringBootHelloWorldApplication.class, args);
+				SpringBootConsumerApplication.class, args);
 		
 		ConsumerControllerClient consumerControllerClient=ctx.getBean(ConsumerControllerClient.class);
 		System.out.println(consumerControllerClient);
